@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  
+    
+ function swapImg() {
+	let t;
+	t = img1.src;
+	img1.src = img3.src;
+	img3.src = img4.src;
+	img4.src = img2.src;
+	img2.src = t;
+ }
+
+
+function colorchanger(){
+	document.fgColor=fgclr.value;
+	document.bgColor=bgclr.value;
+}
+
+
+</script>
+</head>
+
+<body>
+
+<center>
+
+<img src="k.jpg" height="100" width="100" alt="Img not found" id="img1">
+<img src="mern.jpg" height="100" width="100" alt="Img not found" id="img2"></br>
+<img src="trade.jpg" height="100" width="100" alt="Img not found" id="img3">
+<img src="wlper.jpg" height="100" width="100" alt="Img not found" id="img4"></br>
+
+
+<input type="button" value="Swap Img" onClick="swapImg()" />
+
+</br></br></br></br>
+
+ForgroundColor: <input type="color" id="fgclr"/></br>
+backgroundColor: <input type="color" id="bgclr"/> </br>
+<input type="button" value="Apply" onclick="colorchanger()"/>
+</center>
+
+</body>
+</html>

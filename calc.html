@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  
+    
+ function calc() {
+
+    var a = parseInt(s1.value) || 0;
+    var b = parseInt(s2.value) || 0;
+    var c = parseInt(s3.value) || 0;
+    var d = parseInt(s4.value) || 0;
+    var e = parseInt(s5.value) || 0;
+
+    var add = a + b + c + d + e;
+
+    total.value = add;
+    percentage.value = add / 5;
+}
+</script>
+</head>
+
+<body onkeyup="calc()">
+
+<center>
+<h3>
+
+
+ Hindi:<input type="number" min="0" max="100" id="s1" name="s1"/></br>
+ English:<input type="number" min="0" max="100" id="s2" name="s2"/></br>
+ Math:<input type="number" min="0" max="100" id="s3" name="s3"/></br>
+ Science:<input type="number" min="0" max="100" id="s4" name="s4"/></br>
+ Social:<input type="number" min="0" max="100" id="s5" name="s5"/></br></br>
+
+ Total Marks:<input type="number" id="total" name="total" /> of 500</br>
+ Percentage:<input type="number" id="percentage" name="percentage" /></br>
+
+ 
+</h3>
+</center>
+
+</body>
+</html>
